@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Button Popups</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="navbar">Animation Status</div>
+    <div class="button-container">
+        <button class="btn btn-selected" data-popup="selected">Selected</button>
+        <button class="btn btn-rejected" data-popup="rejected">Rejected</button>
+        <button class="btn btn-upheld" data-popup="upheld">Upheld</button>
+    </div>
+
+    <div class="popup" id="selected-popup">
+        <div class="confetti-container"></div>
+        <p class="animated-text">Congratulations!,You got selected</p>
+    </div>
+
+    <div class="popup" id="rejected-popup">
+        <div class="reject-container"></div>
+        <p class="rejected-text">&#10060; Sorry, you are Rejected.</p>
+    </div>
+
+    <div class="popup" id="upheld-popup">
+        <div class="upheld-container"></div>
+        <p class="upheld-text">Request Upheld.</p>
+    </div>
+
+    <script src="animation.js">
+       
+    </script>
+</body>
+</html>
